@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+
+struct UrlData {
+    var id: UUID
+    var title: String
+    var url: String
+}
