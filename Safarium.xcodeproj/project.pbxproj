@@ -9,23 +9,25 @@
 /* Begin PBXBuildFile section */
 		8858EFB527F2861A00B5A446 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8858EFB427F2861A00B5A446 /* AppDelegate.swift */; };
 		8858EFB727F2861A00B5A446 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8858EFB627F2861A00B5A446 /* SceneDelegate.swift */; };
-		8858EFB927F2861A00B5A446 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8858EFB827F2861A00B5A446 /* ViewController.swift */; };
-		8858EFBC27F2861A00B5A446 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8858EFBA27F2861A00B5A446 /* Main.storyboard */; };
+		8858EFB927F2861A00B5A446 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8858EFB827F2861A00B5A446 /* HomeViewController.swift */; };
 		8858EFBF27F2861A00B5A446 /* Safarium.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8858EFBD27F2861A00B5A446 /* Safarium.xcdatamodeld */; };
 		8858EFC127F2861C00B5A446 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8858EFC027F2861C00B5A446 /* Assets.xcassets */; };
 		8858EFC427F2861C00B5A446 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8858EFC227F2861C00B5A446 /* LaunchScreen.storyboard */; };
+		8858EFCE27F286AD00B5A446 /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8858EFCD27F286AD00B5A446 /* CoreDataService.swift */; };
+		8858EFD127F286CC00B5A446 /* Site.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8858EFD027F286CC00B5A446 /* Site.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8858EFB127F2861A00B5A446 /* Safarium.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Safarium.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8858EFB427F2861A00B5A446 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8858EFB627F2861A00B5A446 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8858EFB827F2861A00B5A446 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8858EFBB27F2861A00B5A446 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8858EFB827F2861A00B5A446 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		8858EFBE27F2861A00B5A446 /* Safarium.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Safarium.xcdatamodel; sourceTree = "<group>"; };
 		8858EFC027F2861C00B5A446 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8858EFC327F2861C00B5A446 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8858EFC527F2861C00B5A446 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8858EFCD27F286AD00B5A446 /* CoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
+		8858EFD027F286CC00B5A446 /* Site.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Site.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +60,41 @@
 		8858EFB327F2861A00B5A446 /* Safarium */ = {
 			isa = PBXGroup;
 			children = (
+				8858EFCF27F286B300B5A446 /* Model */,
+				8858EFCC27F2869900B5A446 /* Services */,
+				8858EFCB27F2868C00B5A446 /* Scenes */,
 				8858EFB427F2861A00B5A446 /* AppDelegate.swift */,
 				8858EFB627F2861A00B5A446 /* SceneDelegate.swift */,
-				8858EFB827F2861A00B5A446 /* ViewController.swift */,
-				8858EFBA27F2861A00B5A446 /* Main.storyboard */,
 				8858EFC027F2861C00B5A446 /* Assets.xcassets */,
 				8858EFC227F2861C00B5A446 /* LaunchScreen.storyboard */,
 				8858EFC527F2861C00B5A446 /* Info.plist */,
 				8858EFBD27F2861A00B5A446 /* Safarium.xcdatamodeld */,
 			);
 			path = Safarium;
+			sourceTree = "<group>";
+		};
+		8858EFCB27F2868C00B5A446 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				8858EFB827F2861A00B5A446 /* HomeViewController.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		8858EFCC27F2869900B5A446 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8858EFCD27F286AD00B5A446 /* CoreDataService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		8858EFCF27F286B300B5A446 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8858EFD027F286CC00B5A446 /* Site.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,7 +157,6 @@
 			files = (
 				8858EFC427F2861C00B5A446 /* LaunchScreen.storyboard in Resources */,
 				8858EFC127F2861C00B5A446 /* Assets.xcassets in Resources */,
-				8858EFBC27F2861A00B5A446 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,9 +167,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8858EFB927F2861A00B5A446 /* ViewController.swift in Sources */,
+				8858EFB927F2861A00B5A446 /* HomeViewController.swift in Sources */,
 				8858EFBF27F2861A00B5A446 /* Safarium.xcdatamodeld in Sources */,
+				8858EFCE27F286AD00B5A446 /* CoreDataService.swift in Sources */,
 				8858EFB527F2861A00B5A446 /* AppDelegate.swift in Sources */,
+				8858EFD127F286CC00B5A446 /* Site.swift in Sources */,
 				8858EFB727F2861A00B5A446 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,14 +179,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		8858EFBA27F2861A00B5A446 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8858EFBB27F2861A00B5A446 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8858EFC227F2861C00B5A446 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -298,9 +318,9 @@
 				INFOPLIST_FILE = Safarium/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,7 +330,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -326,9 +346,9 @@
 				INFOPLIST_FILE = Safarium/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -338,7 +358,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
